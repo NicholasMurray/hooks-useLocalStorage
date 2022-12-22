@@ -8,11 +8,10 @@ export default function App() {
   return (
     <div>
       <h1>Local storage hook</h1>
-      <p>Save a string to local storage</p>
-      <p>Stored value: {storedValue}</p>
+      <h2>Current stored value: {storedValue}</h2>
+      <p>Enter a value to save to local storage</p>
       <input
         type="text"
-        value={storedValue}
         onChange={(e) => setStoredValue(e.target.value)}
       />
     </div>
